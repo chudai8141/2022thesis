@@ -1,0 +1,87 @@
+% thesis.tex -- 論文の書き方参考例
+%
+% (注意)氏名、学籍番号等を変更すること。
+%
+% (LaTeXの実行法) platex thesis.tex
+%
+%	このファイル内にある '% 'はコメント。
+%
+\documentclass[a4j,11pt]{jreport}
+\usepackage{ascmac}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{url}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{thesis-master}
+\usepackage{mylatex}
+\pagestyle{plain}
+
+% 所属研究科、専攻
+\courseofmastercs
+% 研究テーマ
+\title{ヒルベルト-ファン変換を適用したゴルフスイング解析}
+% 氏名
+\author{木~~村~~~勇~~大}
+% 学籍番号
+\id{G~~2~~1~~2~~1~~0~~2~~1}
+% 指導教員
+\teacher{生~野~~壮~一~郎}
+% 提出日
+\date{20XX}{X}{X}
+% 提出年度
+\schoolyear{2022}
+
+% 研究室名(カバー用)
+\clab{生野}
+% 学籍番号(カバー用)
+\cid{G2121021}
+
+%% 英語要旨
+\etitle{Numerical Analysis of Golf Swing using Hilbert-Huang Transformation}
+\eauthor{Y~u~d~a~i~~K~i~m~u~r~a}
+\eteacher{S~o~i~c~h~i~r~o~~I~k~u~n~o}
+
+\begin{document}
+%\makecover		% カバー（提出電子化に伴い削除）
+\maketitle		% 表紙
+
+% 修士論文和文要旨
+\jabst{
+\input{00jabstract.tex}	% 00jabstract.texを読み込む
+}
+\makejabstract
+
+% 修士論文英文概要
+\eabst{
+\input{00eabstract.tex}
+}
+\makeeabstract
+
+% 目次
+\pagenumbering{roman}
+\setcounter{page}{1}
+\thispagestyle{plain}
+\tableofcontents	% 目次
+\listoffigures		% 図目次
+\listoftables		% 表目次
+%\listofprograms		% プログラム目次
+
+% 論文本文
+%   論文本文は章や節単位で，いくつかのファイルに分割したほうが編集しやすい．
+% \input{hogehoge}	% hogehoge.texを読み込む．
+% 章構成は適宜変更すること．
+\pagenumbering{arabic}
+\input{01introduction}		% 第1章 序論
+\input{02approach}		% 第2章 関連技術
+\input{03approach}	% 第3章 提案
+\input{04result}	% 第4章 実装
+\input{05conclusion}	% 第5章 結論
+\input{07ack}		% 謝辞
+\bibliographystyle{junsrt}
+\bibliography{mybib} % 参考文献
+\input{08publications} % 業績
+\input{09appendix}	% 付録
+
+
+
+\end{document}
