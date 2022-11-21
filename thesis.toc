@@ -2,19 +2,19 @@
 \contentsline {section}{\numberline {1.1}はじめに}{1}{}%
 \contentsline {section}{\numberline {1.2}研究目的}{1}{}%
 \contentsline {chapter}{\numberline {2}ヒルベルト-ファン変換}{2}{}%
-\contentsline {section}{\numberline {2.1}経験的モード分解}{2}{}%
-\contentsline {section}{\numberline {2.2}多変量経験的モード分解}{2}{}%
-\contentsline {chapter}{\numberline {3}ゴルフスイングのバイオメカニズム}{3}{}%
-\contentsline {section}{\numberline {3.1}ヘッドアップ動作}{3}{}%
-\contentsline {section}{\numberline {3.2}身体が開く動作}{3}{}%
-\contentsline {chapter}{\numberline {4}解析結果}{4}{}%
-\contentsline {section}{\numberline {4.1}ゴルフスイングの数値化}{4}{}%
-\contentsline {section}{\numberline {4.2}被験者情報}{4}{}%
-\contentsline {section}{\numberline {4.3}スペクトログラム解析}{4}{}%
-\contentsline {subsection}{\numberline {4.3.1}頸部，左膝モーションのIMF1}{4}{}%
-\contentsline {subsection}{\numberline {4.3.2}頸部，左膝，左腿モーションのIMF4}{4}{}%
-\contentsline {chapter}{\numberline {5}結論}{5}{}%
-\contentsline {chapter}{謝辞}{6}{}%
-\contentsline {chapter}{業績}{7}{}%
-\contentsline {chapter}{\numberline {付録A}ソースコード}{8}{}%
-\contentsline {section}{\numberline {A.1}CONTENT}{8}{}%
+\contentsline {section}{\numberline {2.1}EMD}{2}{}%
+\contentsline {section}{\numberline {2.2}多変量経験的モード分解}{3}{}%
+\contentsline {chapter}{\numberline {3}ゴルフスイングのバイオメカニズム}{4}{}%
+\contentsline {section}{\numberline {3.1}ヘッドアップ動作}{4}{}%
+\contentsline {section}{\numberline {3.2}身体が開く動作}{4}{}%
+\contentsline {chapter}{\numberline {4}解析結果}{5}{}%
+\contentsline {section}{\numberline {4.1}ゴルフスイングの数値化}{5}{}%
+\contentsline {section}{\numberline {4.2}被験者情報}{5}{}%
+\contentsline {section}{\numberline {4.3}スペクトログラム解析}{5}{}%
+\contentsline {subsection}{\numberline {4.3.1}頸部，左膝モーションのIMF1}{5}{}%
+\contentsline {subsection}{\numberline {4.3.2}頸部，左膝，左腿モーションのIMF4}{5}{}%
+\contentsline {chapter}{\numberline {5}結論}{6}{}%
+\contentsline {chapter}{謝辞}{7}{}%
+\contentsline {chapter}{業績}{8}{}%
+\contentsline {chapter}{\numberline {付録A}ソースコード}{9}{}%
+\contentsline {section}{\numberline {A.1}CONTENT}{9}{}%
