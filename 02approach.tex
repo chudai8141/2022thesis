@@ -4,17 +4,22 @@
 信号$x(t)$ を，経験的モード分解（EMD : Empirical Mode Decomposition）より，有限の固有モード関数（IMF : Intrinsic Mode Function）$\sum_{k=1}^{n}{\rm{IMF}}_{k}$ と一つの残差に分解し，
 分解した$\rm{IMF}$ にヒルベルト変換を適用させ，瞬時周波数$\omega(t)$ と瞬時振幅$A(t)$ を求める手法である．
 %
-瞬時周波数$\omega(t)$ と瞬時振幅$A(t)$ は，解析信号の実部と虚部から求めることができる．
 
-解析信号は，以下の式で定義されている．
+瞬時周波数$\omega(t)$ と瞬時振幅$A(t)$の求め方は，解析信号$z(t) = z_{r}(t) + iz_{i}(t)$の実部$z_{r}(t)$ と虚部$z_{i}(t)$から以下の式のように求める．
 \begin{equation}
-    \label{analitic signal}
-    z(t) = z_{r}(t) + iz_{i}(t)
+    \label{inst freq}
+    \omega(t) = \frac{d}{dt}\arctan\frac{z_{i}(t)}{z_{r}(t)}
 \end{equation}
-ここで\ref{analitic signal}式より，実部$z_{r}$ と虚部$z_{i}$から，瞬時周波数と瞬時振幅を以下の式のように求める．
+
 \begin{equation}
-    A(t) = \sqrt{z_{r}{^{2}} + z_{i}{^{2}}}
-    \omega(t) = 
+    \label{inst amp}
+    A(t) = |z(t)|
+\end{equation}
+
+また，解析信号の虚部である$z_{i}(t)$ を求めるために，実部$z_{r}(t)$ を経験的モード分解より得られた$\sum_{k=1}^{n}{\rm{IMF}}_{k}$ とし，その実部$z_{r}(t)$にヒルベルト変換を適用させることで，虚部$z_{i}(t)$ を求めることができる．
+以下は，$z_{r}(t) = \sum_{k=1}^{n}{\rm{IMF}}_{k}$ にヒルベルト変換を適用させた式である．
+\begin{equation}
+    z_{i}(t) = \frac{1}{\pi}PV \int_{-\infty}^{\infty} \frac{z_{r}(t)}{t - \tau} d \tau = \frac{1}{\pi t} * z_{r}(t)
 \end{equation}
 
 %
@@ -23,4 +28,3 @@
 
 \section{多変量経験的モード分解}
 
-\section{ヒルベルト変換}
