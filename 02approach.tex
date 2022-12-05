@@ -1,6 +1,6 @@
-\chapter{ヒルベルト-ファン変換}
+\chapter{ヒルベルト・ファン変換}
 %
-ヒルベルト-ファン変換（HHT : Hilbert Huang Transform）とは，
+ヒルベルト・ファン変換（HHT : Hilbert Huang Transform）とは，
 信号$x(t)$ を，経験的モード分解（EMD : Empirical Mode Decomposition）より，有限の固有モード関数（IMF : Intrinsic Mode Function）$\sum_{k=1}^{n}{\rm{IMF}}_{k}$ と一つの残差に分解し，
 分解した${\rm{IMF}}_{k}$ にヒルベルト変換を適用させ，瞬時周波数$\omega(t)$ と瞬時振幅$A(t)$ を求める手法である．
 %
@@ -26,7 +26,8 @@
 
 \section{EMD}
 %
-EMDとは，信号$x(t)$ が有限の固有モード関数$\rm{IMF}_{k}$ と残差$r(t)$ で構成されていると仮定し，以下の式で表す．
+EMDとは，信号$x(t)$ が有限の固有モード関数$\rm{IMF}_{k}$ と残差$r(t)$ で構成されていると仮定し，ヒューリスティックに分解する．
+EMDの式を以下で示す．
 \begin{equation}
     \label{emd}
     x(t) = \sum_{k=1}^{n} {\rm{IMF}}_{k} + r(t)
@@ -63,4 +64,6 @@ EMDのアルゴリズムを以下に示す．
 
 \section{多変量経験的モード分解}
 %
+一般に，多チャンネルに拡張された経験的モード分解として，多変量経験的モード分解（MEMD : Multivariate EMD）が提案されている．
+本研究では，複数のセンサからヒトの動作を採取するため，MEMDを採用する．
 %
