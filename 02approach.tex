@@ -5,23 +5,23 @@
 分解した${\rm{IMF}}_{k}$ にヒルベルト変換を適用させ，瞬時周波数$\omega(t)$ と瞬時振幅$A(t)$ を求める手法である．
 %
 
-瞬時周波数$\omega(t)$ と瞬時振幅$A(t)$の求め方は，解析信号$z(t) = z_{r}(t) + iz_{i}(t)$の実部$z_{r}(t)$ と虚部$z_{i}(t)$から以下の式のように求める．
-\begin{equation}
-    \label{inst freq}
-    \omega(t) = \frac{d}{dt}\arctan\frac{z_{i}(t)}{z_{r}(t)}
-\end{equation}
+% 瞬時周波数$\omega(t)$ と瞬時振幅$A(t)$の求め方は，解析信号$z(t) = z_{r}(t) + iz_{i}(t)$の実部$z_{r}(t)$ と虚部$z_{i}(t)$から以下の式のように求める．
+% \begin{equation}
+%     \label{inst freq}
+%     \omega(t) = \frac{d}{dt}\arctan\frac{z_{i}(t)}{z_{r}(t)}
+% \end{equation}
 
-\begin{equation}
-    \label{inst amp}
-    A(t) = |z(t)|
-\end{equation}
+% \begin{equation}
+%     \label{inst amp}
+%     A(t) = |z(t)|
+% \end{equation}
 
-また，解析信号の虚部である$z_{i}(t)$ を求めるために，実部$z_{r}(t)$ を経験的モード分解より得られた$\sum_{k=1}^{n}{\rm{IMF}}_{k}$ とし，その実部$z_{r}(t)$にヒルベルト変換を適用させることで，虚部$z_{i}(t)$ を求めることができる．
-以下は，$z_{r}(t) = \sum_{k=1}^{n}{\rm{IMF}}_{k}$ にヒルベルト変換を適用させた式である．$\rm{PV}$ は，コーシーの主値である．
-\begin{equation}
-    z_{i}(t) = \frac{1}{\pi}PV \int_{-\infty}^{\infty} \frac{z_{r}(t)}{t - \tau} d \tau = \frac{1}{\pi t} * z_{r}(t)
-\end{equation}
-次節からは，HHTで使用されているEMDのアルゴリズム，多変量に拡張された多変量経験的モード分解について説明する．
+% また，解析信号の虚部である$z_{i}(t)$ を求めるために，実部$z_{r}(t)$ を経験的モード分解より得られた$\sum_{k=1}^{n}{\rm{IMF}}_{k}$ とし，その実部$z_{r}(t)$にヒルベルト変換を適用させることで，虚部$z_{i}(t)$ を求めることができる．
+% 以下は，$z_{r}(t) = \sum_{k=1}^{n}{\rm{IMF}}_{k}$ にヒルベルト変換を適用させた式である．$\rm{PV}$ は，コーシーの主値である．
+% \begin{equation}
+%     z_{i}(t) = \frac{1}{\pi}PV \int_{-\infty}^{\infty} \frac{z_{r}(t)}{t - \tau} d \tau = \frac{1}{\pi t} * z_{r}(t)
+% \end{equation}
+% 次節からは，HHTで使用されているEMDのアルゴリズム，多変量に拡張された多変量経験的モード分解について説明する．
 %
 
 \section{EMD}
@@ -66,4 +66,107 @@ EMDのアルゴリズムを以下に示す．
 %
 一般に，多チャンネルに拡張された経験的モード分解として，多変量経験的モード分解（MEMD : Multivariate EMD）が提案されている．
 本研究では，複数のセンサからヒトの動作を採取するため，MEMDを採用する．
+%
+
+\section{解析信号}
+%
+解析信号は，実信号が負の周波数成分を持たない信号として定義される．
+以下に，解析信号の式を示す．%参考文献チェック
+\begin{equation}
+    \label{analyse signal}
+    z(t) = z_{r}(t) + iz_{i}(t)
+\end{equation}
+実信号$z_{r}(t) = x(t)$のスペクトル$X(\omega)$とし，$x(t)$と$X(\omega)$を以下の式で表現する．
+%
+\begin{equation}
+    \label{x(t)}
+    x(t) = \frac{1}{\sqrt{2\pi}} \int X(\omega) e^{i \omega t} d\omega
+\end{equation}
+%
+\begin{equation}
+    \label{X(t)}
+    X(\omega) = \frac{1}{\sqrt{2\pi}} \int x(t) e^{-i\omega t} dt
+\end{equation}
+%
+以下は，解析信号を導出した式である．
+この解析信号は，正の周波数部分のみから成り立つことから，フーリエ逆変換から得られる．
+\begin{equation}
+    \label{iF(t)}
+    z(t) = 2 \frac{1}{\sqrt{2\pi}} \int_{0}^{\infty} X(\omega) e^{i\omega t} d\omega
+\end{equation}
+%
+\ref{iF(t)}式の係数$2$は，解析信号の実部を$x(t)$と等しくするためのものである．
+よって，\ref{X(t)}式を用いると\ref{iF(t)}式は，
+%
+\begin{eqnarray}
+    z(t) &=& 2 \frac{1}{2\pi} \int_{0}^{\infty} \int x(t^{\prime}) e^{-i\omega t^{\prime}} e^{i\omega t} dt^{\prime} d\omega \\
+         &=& \frac{1}{\pi} \int_{0}^{\infty} \int x(t^{\prime}) e^{i\omega (t - t^{\prime})} dt^{\prime} d\omega \label{z(t)変換途中1}
+\end{eqnarray}
+%
+% ここで，デルタ関数$\int_{0}^{\infty} e^{j\omega x} d\omega = \pi \delta (x) + \frac{j}{x}$より，
+ここで，ステップ関数$u(\omega)$のフーリエ変換式は以下の式である．
+\begin{equation}
+    \label{ft step function}
+    \int_{0}^{\infty} u(\omega) e^{i \omega x} = \pi \delta (x) + \frac{i}{x}
+\end{equation}
+%
+\ref{ft step function}式を用いると，\ref{z(t)変換途中1}式は，
+\begin{equation}
+    z(t) = \frac{1}{\pi} \int x(t^{\prime}) \biggl[ \pi \delta (t - t^{\prime}) + \frac{i}{t - t^{\prime}} \biggr] dt^{\prime}
+\end{equation}
+%
+となるため，結果以下の式のように解析信号が導出される．
+\begin{equation}
+    \label{解析信号オリジナル}
+    z(t) = x(t) + \frac{i}{\pi} \int \frac{x(t^{\prime})}{t - t^{\prime}} dt^{\prime}
+\end{equation}
+%
+ここで，$x(t) = z_{r}(t)$に戻し，\ref{解析信号オリジナル}式の第2項を$z_{i}(t)$とおくと，$z_{i}(t)$は以下の式のように表現することができる．
+\begin{equation}
+    \label{ヒルベルト変換}
+    z_{i}(t) = H[z_{r}(t)] = \frac{1}{\pi} \int \frac{x(t^{\prime})}{t - t^{\prime}} dt^{\prime}
+\end{equation}
+%
+
+\section{ヒルベルト変換}
+%参考文献チェック
+前節では，解析信号の導出について説明したが，その虚部$z_{i}(t)$は，\ref{ヒルベルト変換}式よりヒルベルト変換で求められることを示した．
+ヒルベルト変換とは，与えられた関数の周波数成分の位相を$-\frac{\pi}{2}$ずらす操作である．
+以下は，信号$x(t)$のスペクトルを$X(t)$とした時のヒルベルト変換式の導出を示す．
+
+実信号$x(t) =\cos (\omega t)$と直交する虚部は，
+\begin{equation}
+    \label{cosから90度位相を遅らせた式}
+    \cos (\omega t - \frac{\pi}{2}) =\sin (\omega t)
+\end{equation}
+である．
+%
+よって，実部$\cos (\omega t + \phi)$，虚部を\ref{cosから90度位相を遅らせた式}式より$\sin (\omega t + \phi)$とし，複素指数関数を立式すると以下の式のようになる．
+\begin{equation}
+    \label{複素指数関数}
+    e^{i(\omega t + \phi)} = \cos (\omega t + \phi) + i \sin(\omega t + \phi)
+\end{equation}
+\ref{複素指数関数}式に，虚数単位$-i$を1回かけると
+\begin{equation}
+    \label{-i1回目}
+    -i e^{i(\omega t + \phi)} = -i \cos (\omega t + \phi) + \sin(\omega t + \phi)
+\end{equation}
+となる．
+この時の実部は$\sin(\omega t + \phi)$となり，\ref{複素指数関数}式の実部より$\frac{\pi}{2}$遅れていることが確認できる．
+%
+さらに，\ref{-i1回目}式に$-i$をかけると，
+\begin{equation}
+    -e^{i(\omega t + \phi)} = -\cos(\omega t + \phi) - i \sin(\omega t + \phi)
+\end{equation}
+となり，実部に注目すると\ref{-i1回目}式の実部より，位相が$\frac{\pi}{2}$遅れていることが確認できる．
+%
+\begin{equation}
+    -\cos(\omega t + \phi) = \sin(\omega t + \phi - \frac{\pi}{2})
+\end{equation}
+%
+すなわち，虚数単位$i$をかけることで，$\frac{\pi}{2}$位相を遅らせることができる．
+しかしながら，これは連続された関数のみに適応が可能であるため，離散的関数の位相を$\frac{\pi}{2}$遅らせるには，$-i {\rm{sgn}}(f)$をかける必要がある．
+%
+
+実信号$x(t)$のスペクトルを$X(t)$とする時，全ての周波数成分の位相を$\frac{\pi}{2}$遅らせるには，スペクトル$X(t)$に$-i {\rm{sgn}} (f)$をかけ，その結果をフーリエ逆変換する必要がある．．
 %
