@@ -9,18 +9,18 @@
 \contentsline {section}{\numberline {3.2}人体構造}{6}{}%
 \contentsline {section}{\numberline {3.3}人体の運動表現}{6}{}%
 \contentsline {section}{\numberline {3.4}ゴルフ}{7}{}%
-\contentsline {section}{\numberline {3.5}ゴルフスイング}{7}{}%
-\contentsline {section}{\numberline {3.6}ゴルフボールの弾道}{7}{}%
-\contentsline {section}{\numberline {3.7}ヘッドアップ動作}{7}{}%
-\contentsline {section}{\numberline {3.8}身体が開く動作}{7}{}%
-\contentsline {chapter}{\numberline {4}解析結果}{8}{}%
-\contentsline {section}{\numberline {4.1}ゴルフスイングの数値化}{8}{}%
-\contentsline {section}{\numberline {4.2}被験者情報}{8}{}%
-\contentsline {section}{\numberline {4.3}スペクトログラム解析}{8}{}%
-\contentsline {subsection}{\numberline {4.3.1}頸部，左膝モーションのIMF1}{8}{}%
-\contentsline {subsection}{\numberline {4.3.2}頸部，左膝，左腿モーションのIMF4}{8}{}%
-\contentsline {chapter}{\numberline {5}結論}{9}{}%
-\contentsline {chapter}{謝辞}{10}{}%
-\contentsline {chapter}{業績}{11}{}%
-\contentsline {chapter}{\numberline {付録A}ソースコード}{12}{}%
-\contentsline {section}{\numberline {A.1}CONTENT}{12}{}%
+\contentsline {section}{\numberline {3.5}ゴルフスイング}{8}{}%
+\contentsline {section}{\numberline {3.6}ゴルフボールの弾道}{8}{}%
+\contentsline {section}{\numberline {3.7}ヘッドアップ動作}{8}{}%
+\contentsline {section}{\numberline {3.8}身体が開く動作}{8}{}%
+\contentsline {chapter}{\numberline {4}解析結果}{9}{}%
+\contentsline {section}{\numberline {4.1}ゴルフスイングの数値化}{9}{}%
+\contentsline {section}{\numberline {4.2}被験者情報}{9}{}%
+\contentsline {section}{\numberline {4.3}スペクトログラム解析}{9}{}%
+\contentsline {subsection}{\numberline {4.3.1}頸部，左膝モーションのIMF1}{9}{}%
+\contentsline {subsection}{\numberline {4.3.2}頸部，左膝，左腿モーションのIMF4}{9}{}%
+\contentsline {chapter}{\numberline {5}結論}{10}{}%
+\contentsline {chapter}{謝辞}{11}{}%
+\contentsline {chapter}{業績}{12}{}%
+\contentsline {chapter}{\numberline {付録A}ソースコード}{13}{}%
+\contentsline {section}{\numberline {A.1}CONTENT}{13}{}%
