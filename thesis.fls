@@ -1,8 +1,8 @@
-PWD /Users/kimurayuudai/Documents/2022thesis
+PWD /Users/yudai_kimura/Documents/2022thesis
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/kimurayuudai/Documents/2022thesis/thesis.tex
+INPUT /Users/yudai_kimura/Documents/2022thesis/thesis.tex
 OUTPUT thesis.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/platex/base/jreport.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/platex/base/jreport.cls
