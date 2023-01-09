@@ -30,8 +30,9 @@ bvhファイルに書き込まれている時系列データは，このポー�
 よって，各関節球の3軸方向の回転角と腰部の3軸方向の位置座標を合計し，180チャンネルの時系列データを扱う．
 
 \section{被験者情報}
-ゴルフ歴10年のアベレージゴルファーがドライバーショットを打った．
-被験者のドライバーショットでは，ストレート弾道のゴルフスイング，スライス弾道でヘッドアップ動作をしたゴルフスイング，スライス弾道で身体の開きの動作をしたゴルフスイングを6スイングずつ採取した．
+被験者は，ゴルフ歴10年，平均スコア100のアベレージゴルファーである．
+被験者にドライバーショットを行わせたところ，ストレート弾道に飛球したゴルフスイング，スライス弾道でヘッドアップ動作をしたゴルフスイング，スライス弾道で身体が開く動作をしたゴルフスイングの3種類採取することができ，各種類で6スイングずつデータを採取することができた．
+本研究では，各スイングごとにヒルベルト・ファン変換を行い，瞬時周波数と瞬時振幅を求め，各種類毎に瞬時周波数の平均化，瞬時振幅平滑化を行う．
 
 本研究では，アベレージゴルファーのスライスの原因としてよく挙げられるヘッドアップ動作，身体が開く動作をしたゴルフスイングに注目し，ストレート弾道に飛球したゴルフスイングと比較して考察を行う．
 
@@ -43,12 +44,18 @@ bvhファイルに書き込まれている時系列データは，このポー�
             \begin{minipage}{0.5\hsize}
                 \begin{center}
                     \includegraphics[width=8cm]{./images/straight_data/neck/IMF1.png}
+                    % \caption{ストレート弾道で頸部モーションIMF1}
+                    (a)
+                    \label{straight neck imf1}
                 \end{center}
             \end{minipage}
 
             \begin{minipage}{0.5\hsize}
                 \begin{center}
                     \includegraphics[width=8cm]{./images/straight_data/left_leg/IMF1.png}
+                    % \caption{ストレート弾道で左膝モーションIMF1}
+                    (b)
+                    \label{straight left leg imf1}
                 \end{center}
             \end{minipage}
         \end{tabular}
@@ -61,16 +68,30 @@ bvhファイルに書き込まれている時系列データは，このポー�
             \begin{minipage}{0.5\hsize}
                 \begin{center}
                     \includegraphics[width=8cm]{./images/straight_data/neck/IMF1.png}
+                    % \caption{スライス弾道で頸部モーションIMF1}
+                    (c)
+                    \label{slice neck imf1}
                 \end{center}
             \end{minipage}
 
             \begin{minipage}{0.5\hsize}
                 \begin{center}
                     \includegraphics[width=8cm]{./images/straight_data/left_leg/IMF1.png}
+                    % \caption{スライス弾道で左膝モーションIMF1}
+                    (d)
+                    \label{slice left leg imf1}
                 \end{center}
             \end{minipage}
         \end{tabular}
     \end{center}
+    \caption{ストレート弾道，スライス弾道に飛球した頸部，左膝モーションのゴルフスイングモーションスペクトル．(a)はストレート弾道で頸部モーションIMF1．(b)はストレート弾道で左膝モーションIMF1．(c)はスライス弾道で頸部モーションIMF1．(d)はスライス弾道で左膝モーションIMF1．}
+    \label{imf1}
 \end{figure}
+
+被験者のドライバーショットを数値化し，ストレート弾道，ヘッドアップ動作をしたスライス弾道，身体が開く動作をしたスライス弾道の3つに分類し，各分類毎ヒルベルト・ファン変換を適用させ，瞬時周波数と瞬時振幅を計算した．
+ゆえに，図\ref{imf1}は，ストレート弾道，スライス弾道に飛球したゴルフスイングで頸部モーション，左膝モーションのIMF1をスペクトログラムにしたものある．
+図\ref{imf1}の赤線はインパクト，緑線はトップ，カラーバーは振幅（度）を示している．
+emdでは高次成分から低次成分に分解されるため，
+
 
 \subsection{頸部，左膝，左腿モーションのIMF4}
