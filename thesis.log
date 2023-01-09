@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.7.31)  9 JAN 2023 21:56
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.7.31)  9 JAN 2023 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -306,101 +306,101 @@ File: ./images/Tpose.png Graphic file (type bmp)
 
 ] [11]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 54.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 55.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 54.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 55.
 File: ./images/straight_data/neck/IMF1.png Graphic file (type bmp)
 <./images/straight_data/neck/IMF1.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 60--64
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 61--65
  [] 
  []
 
 File: ./images/straight_data/left_leg/IMF1.png Graphic file (type bmp)
 <./images/straight_data/left_leg/IMF1.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 69--73
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 70--74
  [] 
  []
 
 
-Overfull \hbox (15.65001pt too wide) in paragraph at lines 57--76
+Overfull \hbox (15.65001pt too wide) in paragraph at lines 58--77
  [][][] 
  []
 
 File: ./images/straight_data/neck/IMF1.png Graphic file (type bmp)
 <./images/straight_data/neck/IMF1.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 82--86
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 83--87
  [] 
  []
 
 File: ./images/straight_data/left_leg/IMF1.png Graphic file (type bmp)
 <./images/straight_data/left_leg/IMF1.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 91--95
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 92--96
  [] 
  []
 
 
-Overfull \hbox (15.65001pt too wide) in paragraph at lines 79--98
+Overfull \hbox (15.65001pt too wide) in paragraph at lines 80--99
  [][][] 
  []
 
 File: ./images/straight_data/neck/IMF4.png Graphic file (type bmp)
 <./images/straight_data/neck/IMF4.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 116--118
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 117--119
  [] 
  []
 
 File: ./images/headup_data/neck/IMF4.png Graphic file (type bmp)
 <./images/headup_data/neck/IMF4.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 123--125
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 124--126
  [] 
  []
 
 
-Overfull \hbox (15.65001pt too wide) in paragraph at lines 113--128
+Overfull \hbox (15.65001pt too wide) in paragraph at lines 114--129
  [][][] 
  []
 
 File: ./images/straight_data/left_up_leg/IMF4.png Graphic file (type bmp)
 <./images/straight_data/left_up_leg/IMF4.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 139--141
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 140--142
  [] 
  []
 
 File: ./images/straight_data/left_leg/IMF4.png Graphic file (type bmp)
 <./images/straight_data/left_leg/IMF4.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 146--148
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 147--149
  [] 
  []
 
 
-Overfull \hbox (15.65001pt too wide) in paragraph at lines 136--151
+Overfull \hbox (15.65001pt too wide) in paragraph at lines 137--152
  [][][] 
  []
 
 File: ./images/opening_data/left_up_leg/IMF4.png Graphic file (type bmp)
 <./images/opening_data/left_up_leg/IMF4.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 157--159
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 158--160
  [] 
  []
 
 File: ./images/opening_data/left_up_leg/IMF4.png Graphic file (type bmp)
 <./images/opening_data/left_up_leg/IMF4.png>
 
-Overfull \hbox (18.62204pt too wide) in paragraph at lines 164--166
+Overfull \hbox (18.62204pt too wide) in paragraph at lines 165--167
  [] 
  []
 
 
-Overfull \hbox (15.65001pt too wide) in paragraph at lines 154--169
+Overfull \hbox (15.65001pt too wide) in paragraph at lines 155--170
  [][][] 
  []
 
@@ -435,10 +435,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4066 strings out of 478724
  60702 string characters out of 5858392
- 579944 words of memory out of 5000000
+ 580944 words of memory out of 5000000
  22425 multiletter control sequences out of 15000+600000
  485249 words of font info for 92 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  55i,11n,62p,378b,1182s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (24 pages, 71028 bytes).
+Output written on thesis.dvi (24 pages, 72088 bytes).
