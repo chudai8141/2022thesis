@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {3.2}人体構造}{6}{}%
 \contentsline {section}{\numberline {3.3}人体の運動表現}{6}{}%
 \contentsline {section}{\numberline {3.4}ゴルフ}{8}{}%
-\contentsline {section}{\numberline {3.5}ゴルフボールの弾道}{8}{}%
-\contentsline {section}{\numberline {3.6}ヘッドアップ動作と身体が開く動作}{9}{}%
+\contentsline {section}{\numberline {3.5}ゴルフボールの弾道}{9}{}%
+\contentsline {section}{\numberline {3.6}ヘッドアップ動作と身体が開く動作}{10}{}%
 \contentsline {chapter}{\numberline {4}解析結果}{11}{}%
 \contentsline {section}{\numberline {4.1}ゴルフスイングの数値化}{11}{}%
 \contentsline {section}{\numberline {4.2}被験者情報}{13}{}%
