@@ -4,6 +4,7 @@
 ゴルフスイング動作の数値化は，慣性式モーションキャプチャを用いて行う．
 数値化した時系列データにHHTを適用させ，瞬時周波数$\rm{Hz}$と瞬時振幅（radian）を計算し，スペクトログラム解析を行う．
 
+
 %=================================================================================================================================================================================================================================%
 \section{ゴルフスイングの数値化}
 % ゴルフスイングの数値化は，慣性式モーションキャプチャを使用して行う．
@@ -53,120 +54,208 @@ BVHファイルに書き込まれている時系列データは，このポー�
 \section{スペクトログラム解析}
 %=================================================================================================================================================================================================================================%
 \subsection{頸部，左膝モーションのIMF1}
-\begin{figure}
-    \begin{center}
-        \begin{tabular}{c}
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/straight_data/neck/IMF1.png}
-                    % \caption{ストレート弾道で頸部モーションIMF1}
-                    (a)
-                    \label{straight neck imf1}
-                \end{center}
-            \end{minipage}
+% \begin{figure}
+%     \begin{center}
+%         \begin{tabular}{c}
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/straight_data/neck/IMF1.png}
+%                     % \caption{ストレート弾道で頸部モーションIMF1}
+%                     (a)
+%                     \label{straight neck imf1}
+%                 \end{center}
+%             \end{minipage}
 
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/straight_data/left_leg/IMF1.png}
-                    % \caption{ストレート弾道で左膝モーションIMF1}
-                    (b)
-                    \label{straight left leg imf1}
-                \end{center}
-            \end{minipage}
-        \end{tabular}
-    \end{center}
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/straight_data/left_leg/IMF1.png}
+%                     % \caption{ストレート弾道で左膝モーションIMF1}
+%                     (b)
+%                     \label{straight left leg imf1}
+%                 \end{center}
+%             \end{minipage}
+%         \end{tabular}
+%     \end{center}
 
-    \begin{center}
-        \begin{tabular}{c}
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/straight_data/neck/IMF1.png}
-                    % \caption{スライス弾道で頸部モーションIMF1}
-                    (c)
-                    \label{slice neck imf1}
-                \end{center}
-            \end{minipage}
+%     \begin{center}
+%         \begin{tabular}{c}
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/straight_data/neck/IMF1.png}
+%                     % \caption{スライス弾道で頸部モーションIMF1}
+%                     (c)
+%                     \label{slice neck imf1}
+%                 \end{center}
+%             \end{minipage}
 
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/straight_data/left_leg/IMF1.png}
-                    % \caption{スライス弾道で左膝モーションIMF1}
-                    (d)
-                    \label{slice left leg imf1}
-                \end{center}
-            \end{minipage}
-        \end{tabular}
-    \end{center}
-    \caption{ストレート弾道，スライス弾道に飛球した頸部，左膝モーションIMF1のスペクトログラム．(a)はストレート弾道で頸部モーションIMF1．(b)はストレート弾道で左膝モーションIMF1．(c)はスライス弾道で頸部モーションIMF1．(d)はスライス弾道で左膝モーションIMF1．}
-    \label{imf1}
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/straight_data/left_leg/IMF1.png}
+%                     % \caption{スライス弾道で左膝モーションIMF1}
+%                     (d)
+%                     \label{slice left leg imf1}
+%                 \end{center}
+%             \end{minipage}
+%         \end{tabular}
+%     \end{center}
+%     \caption{ストレート弾道，スライス弾道に飛球した頸部，左膝モーションIMF1のスペクトログラム．(a)はストレート弾道で頸部モーションIMF1．(b)はストレート弾道で左膝モーションIMF1．(c)はスライス弾道で頸部モーションIMF1．(d)はスライス弾道で左膝モーションIMF1．}
+%     \label{imf1}
+% \end{figure}
+
+\begin{figure}[tb]
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/straight_data/neck/IMF1.png}
+    \caption{ストレート弾道の頸部モーションIMF1}
+    % (a)
+    \label{straight neck imf1}
+\end{figure}
+
+\begin{figure}[tb]
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/straight_data/left_leg/IMF1.png}
+    \caption{ストレート弾道の左膝モーションIMF1}
+    % (b)
+    \label{straight left leg imf1}
+\end{figure}
+
+\begin{figure}[tb]
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/headup_data/neck/IMF1.png}
+    \caption{スライス弾道の頸部モーションIMF1}
+    % (c)
+    \label{headup neck imf1}
+\end{figure}
+
+\begin{figure}[tb]
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/opening_data/left_leg/IMF1.png}
+    \caption{スライス弾道の左膝モーションIMF1}
+    % (d)
+    \label{opening left leg imf1}
 \end{figure}
 
 % 被験者のドライバーショットを数値化し，ストレート弾道，ヘッドアップ動作をしたスライス弾道，身体が開く動作をしたスライス弾道の3つに分類し，各分類毎ヒルベルト・ファン変換を適用させ，瞬時周波数と瞬時振幅を計算した．
-図\ref{imf1}は，ストレート弾道，スライス弾道に飛球したゴルフスイングモーションにHHTを適用させ，各弾道の頸部モーション，左膝モーションのIMF1をスペクトログラムにしたものある．
-図\ref{imf1}の縦軸は瞬時周波数，横軸は時間，カラーバーは瞬時振幅（度），赤線はインパクト，緑線はトップを示している．
-IMF1のスペクトログラムでは，瞬時周波数がおよそ$0\rm{Hz}$から$30\rm{Hz}$帯，瞬時振幅はおよそ0.4度から0.6度で離散的に分布されていることが確認できる．
-すなわち，高周波成分のスペクトログラムでは，ストレート弾道とスライス弾道となる原因を示すことが難しい．
+図\ref{straight neck imf1}，
+図\ref{straight left leg imf1}，
+図\ref{headup neck imf1}，
+図\ref{opening left leg imf1}は，
+ストレート弾道およびスライス弾道に飛球したゴルフスイングモーションにHHTを適用させ，各弾道の頸部モーションおよび左膝モーションの${\rm{IMF}}_{1}$をスペクトログラムにしたものである．
+% 図\ref{straight neck imf1}，図\ref{straight left leg imf1}，図\ref{headup neck imf1}，図\ref{opening left leg imf1}の縦軸は瞬時周波数，横軸は時間，カラーバーは瞬時振幅（度），赤線はインパクト，緑線はトップを示している．
+${\rm{IMF}}_{1}$のスペクトログラムでは，瞬時周波数がおよそ$0\rm{Hz}$から$30\rm{Hz}$の周波数領域かつ瞬時振幅はおよそ0.4度から0.6度で離散的に分布されていることが確認できる．
+すなわち，低振幅かつ高周波成分のスペクトログラムであるため，ストレート弾道とスライス弾道の差を示すことが難しい．
 
 %=================================================================================================================================================================================================================================%
 \subsection{ヘッドアップ動作}
-\begin{figure}
-    \begin{center}
-        \begin{tabular}{c}
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/straight_data/neck/IMF4.png}
-                    (e)
-                \end{center}
-            \end{minipage}
+% \begin{figure}
+%     \begin{center}
+%         \begin{tabular}{c}
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/straight_data/neck/IMF4.png}
+%                     (e)
+%                 \end{center}
+%             \end{minipage}
 
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/headup_data/neck/IMF4.png}
-                    (f)
-                \end{center}
-            \end{minipage}
-        \end{tabular}
-    \end{center}
-    \caption{ストレート弾道，スライス弾道に飛球した頸部モーションIMF4のスペクトログラム．(e)はストレート弾道の頸部モーションIMF4．(f)はスライス弾道の頸部モーションIMF4．}
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/headup_data/neck/IMF4.png}
+%                     (f)
+%                 \end{center}
+%             \end{minipage}
+%         \end{tabular}
+%     \end{center}
+%     \caption{ストレート弾道，スライス弾道に飛球した頸部モーションIMF4のスペクトログラム．(e)はストレート弾道の頸部モーションIMF4．(f)はスライス弾道の頸部モーションIMF4．}
+% \end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/straight_data/neck/IMF4.png}
+    \caption{ストレート弾道の頸部モーションIMF1}
+    \label{straight neck imf4}
 \end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/headup_data/neck/IMF4.png}
+    \caption{ストレート弾道の頸部モーションIMF1}
+    \label{headup neck imf4}
+\end{figure}
+
+図\ref{straight neck imf4}，
+図\ref{headup neck imf4}は，
+ストレート弾道およびスライス弾道に飛球したゴルフスイングモーションにHHTを適用させ，各弾道の頸部モーション${\rm{IMF}}_{4}$をスペクトログラムにしたものである．
+本節では，図\ref{straight neck imf4}と図\ref{headup neck imf4}を比較し，ストレート弾道時とスライス弾道時のゴルフスイング動作にどのような差があるかをバイオメカニクスの視点で議論する．
+図\ref{headup neck imf4}では，$0.4\rm{s}$からインパクト間に$1.5\rm{Hz}$から$2.5\rm{Hz}$に高振幅な周波数成分が確認できる．
+図\ref{straight neck imf4}では，トップやインパクト直前には高振幅な周波数成分は確認できない．
+これより，バイオメカニクスの視点から考察を行うと，スライス弾道時の頸部モーション${\rm{IMF}}_{4}$では，インパクト前に高振幅な低周波成分が確認されるため，ヘッドアップ動作をしたゴルフスイングモーションであることが明らかである．
+ストレート弾道時の頸部モーション${\rm{IMF}}_{4}$は，インパクト前に低振幅な低周波成分が確認されることから，ヘッドアップ動作が生じていないことが考察される．
 
 %=================================================================================================================================================================================================================================%
 \subsection{身体が開く動作}
+% \begin{figure}
+%     \begin{center}
+%         \begin{tabular}{c}
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/straight_data/left_up_leg/IMF4.png}
+%                     (g)
+%                 \end{center}
+%             \end{minipage}
+
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/straight_data/left_leg/IMF4.png}
+%                     (h)
+%                 \end{center}
+%             \end{minipage}
+%         \end{tabular}
+%     \end{center}
+
+%     \begin{center}
+%         \begin{tabular}{c}
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/opening_data/left_up_leg/IMF4.png}
+%                     (i)
+%                 \end{center}
+%             \end{minipage}
+
+%             \begin{minipage}{0.5\hsize}
+%                 \begin{center}
+%                     \includegraphics[width=8cm]{./images/opening_data/left_up_leg/IMF4.png}
+%                     (j)
+%                 \end{center}
+%             \end{minipage}
+%         \end{tabular}
+%     \end{center}
+%     \caption{ストレート弾道，スライス弾道に飛球した左腿，左膝モーションIMF4のスペクトログラム．(g)はストレート弾道の左腿モーションIMF4．(h)はストレート弾道の左膝モーションIMF4．(i)はスライス弾道の左腿モーションIMF4．(h)はスライス弾道の左膝モーションIMF4．}
+% \end{figure}
+
 \begin{figure}
-    \begin{center}
-        \begin{tabular}{c}
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/straight_data/left_up_leg/IMF4.png}
-                    (g)
-                \end{center}
-            \end{minipage}
-
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/straight_data/left_leg/IMF4.png}
-                    (h)
-                \end{center}
-            \end{minipage}
-        \end{tabular}
-    \end{center}
-
-    \begin{center}
-        \begin{tabular}{c}
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/opening_data/left_up_leg/IMF4.png}
-                    (i)
-                \end{center}
-            \end{minipage}
-
-            \begin{minipage}{0.5\hsize}
-                \begin{center}
-                    \includegraphics[width=8cm]{./images/opening_data/left_up_leg/IMF4.png}
-                    (j)
-                \end{center}
-            \end{minipage}
-        \end{tabular}
-    \end{center}
-    \caption{ストレート弾道，スライス弾道に飛球した左腿，左膝モーションIMF4のスペクトログラム．(g)はストレート弾道の左腿モーションIMF4．(h)はストレート弾道の左膝モーションIMF4．(i)はスライス弾道の左腿モーションIMF4．(h)はスライス弾道の左膝モーションIMF4．}
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/straight_data/left_up_leg/IMF4.png}
+    \caption{ストレート弾道の左腿モーションIMF1}
+    \label{straight left up leg imf4}
 \end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/straight_data/left_leg/IMF4.png}
+    \caption{ストレート弾道の左腿モーションIMF1}
+    \label{straight left leg imf4}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/opening_data/left_up_leg/IMF4.png}
+    \caption{スライス弾道の左腿モーションIMF1}
+    \label{opening left up leg imf4}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{./images/opening_data/left_leg/IMF4.png}
+    \caption{スライス弾道の左腿モーションIMF1}
+    \label{opening left leg imf4}
+\end{figure}
+
